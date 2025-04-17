@@ -9,8 +9,9 @@ const App = () => {
   },[])
   return (
     <div className='bg-black'>
-      <h1 className='text-orange-500 text-6xl font-semibold text-center py-10 italic overline'>Image <span className='text-white'>Gallery</span></h1>
+      <h1 className='text-orange-500 text-6xl font-semibold text-center py-10 italic overline'>Image <span className='text-white'>Gallery Images</span></h1>
       <div className="flex flex-wrap justify-center gap-x-10">
+        <h5>Check the fetched Images below!</h5>
         {galleryPhoto.map((photo,index)=>(
           <div key={index} className='my-5 rounded-xl'>
             <img src={photo.download_url} alt={`By ${photo.author}`} width={'350'} className='rounded-xl border-2 border-orange-500'/>
